@@ -1,0 +1,11 @@
+<view>
+  <view class="title">{{book}}</view>
+  <view class="word">{{word}}</view>
+  <view class="buttbox">
+    <view class="inbox">
+      <button class="last"  plain="true" size="mini" bindtap="lastword" > 上一词</button>       
+      <button class="next"   plain="true" size="mini"  bindtap="nextword"> 下一词</button>
+    </view>
+  </view>
+
+</view>

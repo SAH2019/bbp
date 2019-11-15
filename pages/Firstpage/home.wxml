@@ -1,0 +1,31 @@
+<view class="whole">
+  <view class="first">首页</view>
+  <picker bindchange="bindchange" value="0" range="{{bookname}}">
+    <view class="changePlan" bindtap="changePlan">
+      <image style="width: 60rpx; height: 60rpx;" src="http://r.photo.store.qq.com/psb?/V11skLa80oPRLo/rtelqCaoQ8RaXQRfyfN*klBLnMkIyktPnd0o0hUDD7o!/r/dFIBAAAAAAAA"></image>
+      <view class="bookchoose">{{book}} </view>
+    </view>
+  </picker>
+  <view class="class1">
+    <view class=" poster">
+      <view class="text1">努力就有收获！</view>
+      <view class="text2">
+        Only the guilty need fear me.
+      </view>
+      <view class="Learning-progress ">
+        <view>学习进度</view>
+        <text class="text3"> 10/500 </text>
+        <progress class="progress1" percent="20" show-info/>
+      </view>
+    </view>
+  </view>
+  <view>
+    <button class="StartStudy" bindtap="study" style="border-style:none;">开始学习</button>
+    <button class="Paihangbang" bindtap="Paihangbang" plain="true" style="border-style:none; color:#8dc63f; ">排行榜></button>
+    <button class="Xiaoyouxi" bindtap="Xiaoyouxi" plain="true" style="border-style:none; color:#8dc63f;">小游戏></button>
+  </view>
+
+
+
+
+</view>

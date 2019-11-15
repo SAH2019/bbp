@@ -1,0 +1,44 @@
+.person-item{
+width: 100%;
+text-align: left;
+height: 3rem;
+line-height: 3rem;
+border-bottom: 1rpx solid #eee;
+position: relative;
+
+}
+
+.text{
+text-align: center;
+font-size: 40rpx;
+
+}
+
+.arrow{
+width: 15rpx;
+height: 15rpx;
+border-top: 2rpx solid #999;
+border-right: 2rpx solid #999;
+position: absolute;
+right: 20rpx;
+transform: rotate(45deg);
+top: 50%;
+
+}
+
+
+.changePlan {
+  display: flex;
+  flex-direction: row;
+  color:#ff9700;
+  align-items: center;
+  margin-left: 40rpx;
+    font-size: 40rpx;
+  font-weight: 500;
+  
+}
+
+.userName{
+
+  margin-left: 20rpx;
+}

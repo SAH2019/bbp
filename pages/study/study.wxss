@@ -1,0 +1,45 @@
+/* pages/study/study.wxss */
+.word{
+
+
+margin-top: 50%;
+/* margin-left: 40%; */
+text-align: center;
+font-size: 60rpx;
+
+
+}
+
+
+
+
+.last{
+ border-radius: 100rpx;
+ color:  #f37b1d !important;
+ border-color:  #f43f3b !important;
+ 
+ 
+}
+
+
+.next{
+ border-radius: 100rpx;
+border-color:  #f43f3b !important;
+color: #f37b1d !important;
+ 
+}
+
+button-hover {
+	transform: translate(1rpx, 1rpx);
+}
+
+.buttbox{
+  position: fixed;
+  bottom: 100rpx;
+  width: 750rpx;
+}
+
+.inbox{
+  display: flex;
+  justify-content: space-between ;
+}
