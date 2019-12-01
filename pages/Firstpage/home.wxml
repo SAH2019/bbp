@@ -1,21 +1,31 @@
+
 <view class="whole">
   <view class="first">首页</view>
-  <picker bindchange="bindchange" value="0" range="{{bookname}}">
-    <view class="changePlan" bindtap="changePlan">
-      <image style="width: 60rpx; height: 60rpx;" src="http://r.photo.store.qq.com/psb?/V11skLa80oPRLo/rtelqCaoQ8RaXQRfyfN*klBLnMkIyktPnd0o0hUDD7o!/r/dFIBAAAAAAAA"></image>
-      <view class="bookchoose">{{book}} </view>
-    </view>
-  </picker>
+   <view class="picker">
+    <picker bindchange="bindchange" value="0" range="{{bookname}}">
+      <view class="changePlan" bindtap="changePlan">
+        <image style="width: 60rpx; height: 60rpx;" src="http://r.photo.store.qq.com/psb?/V11skLa80oPRLo/rtelqCaoQ8RaXQRfyfN*klBLnMkIyktPnd0o0hUDD7o!/r/dFIBAAAAAAAA"></image>
+        <view class="bookchoose">{{book}} </view>
+      </view>
+    </picker>
+    <picker bindchange="daychange" value="0" range="{{dayNum}}">
+      <view class="changePlan" bindtap="changePlan">
+       
+        <view class="daychoose">计划天数：{{day}} </view>
+      </view>
+    </picker>
+   </view>
+  
   <view class="class1">
     <view class=" poster">
       <view class="text1">努力就有收获！</view>
       <view class="text2">
-        Only the guilty need fear me.
+        No pains,no gains.
       </view>
       <view class="Learning-progress ">
         <view>学习进度</view>
         <text class="text3"> 10/500 </text>
-        <progress class="progress1" percent="20" show-info/>
+        <progress class="progress1" percent="{{x}}" show-info/>
       </view>
     </view>
   </view>

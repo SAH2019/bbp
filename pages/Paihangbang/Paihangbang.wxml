@@ -1,14 +1,62 @@
+
+
+<!--导航条--> 
+
+<view class="navbar"> 
+
+ <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text> 
+
+</view> 
+
+  
+ 
+
+<view hidden="{{currentTab!==0}}"> 
+
   <view class="container">
       <view class="word-list">
-        <block wx:for="{{personData}}" >
+        <block wx:for="{{personData1}}" >
           <view class="person-item">
             <view class="changePlan" bindtap="changePlan">
-              <image style="width: 60rpx; height: 60rpx; border-radius: 30rpx;" src="http://m.qpic.cn/psb?/V11skLa80oPRLo/GAWawXHtg4dNs60yUUd5ILzACVjBc7u3scX.NFv1qRQ!/b/dDcBAAAAAAAA&bo=6APoAwAAAAARFyA!&rf=viewer_4"></image>
-              <view class="userName">{{item.userName}} </view>
+              <view class="userindex">{{index+1}} </view>
+               <image class="class1" style="width: 60rpx; height: 60rpx; border-radius: 30rpx;" src="{{item.image}}"></image>
+              <view class="userName">
+              <view class="class2">{{item.userName}} </view>
+              </view>
+              <view class="wordNum">{{item.wordNum}} 词</view>
             </view>
-          <view class="arrow"/>
           </view>
         </block>
       </view>
     </view>
 <view/>
+
+
+</view> 
+
+
+<view hidden="{{currentTab!==1}}"> 
+
+   <view class="container">
+      <view class="word-list">
+        <block wx:for="{{personData2}}" >
+          <view class="person-item">
+            <view class="changePlan" bindtap="changePlan">
+              <view class="userindex">{{index+1}} </view>
+               <image class="class1" style="width: 60rpx; height: 60rpx; border-radius: 30rpx;" src="{{item.image}}"></image>
+              <view class="userName">
+              <view class="class2">{{item.userName}} </view>
+              </view>
+              <view class="wordNum">{{item.wordNum}} 词</view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+<view/>
+
+
+
+</view> 
+
+

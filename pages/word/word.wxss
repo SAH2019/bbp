@@ -42,3 +42,33 @@ margin-left: 20rpx;
 border-width: 2rpx;
 
 }
+
+.progress1{
+margin-right: 250rpx;
+
+margin-top: 10rpx;  
+
+
+}
+
+.text1{
+font-size: 35rpx;
+color: black;
+
+
+
+}
+.text2{
+
+margin-top: 10rpx;  
+
+
+
+}
+.text3{
+
+  
+margin-top: 10rpx;  
+
+
+}

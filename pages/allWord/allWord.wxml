@@ -1,24 +1,34 @@
 <!--pages/allWors.wxml-->
 <view>
-    <view class="wrapper">
-
-      <slot></slot>
-        <view class='tit_seabox'>
-            <view class="tit_seabox_bar {{addflag?'tit_seabox_add':''}} {{searchflag?'tit_start_search':''}}">
-                <icon type='search' size="32rpx"></icon>
-                <input type="text" bindinput="searchList" bindconfirm="endsearchList" bindfocus='getfocus' bindblur="blursearch" confirm-type='search' value='{{searchstr}}' placeholder='请输入待查询的单词' />
-                <icon bindtap='activity_clear' wx:if="{{searchflag}}" type='clear' size="28rpx"></icon>
-            
+    
+    <view class="box1">
+        <view class="cu-bar search bg-white">
+              <view class="search-form round">
+              <text class="cuIcon-search"></text>
+              <input type="text" placeholder="搜索单词" confirm-type="search"></input>
             </view>
-            <view wx:if="{{searchflag}}" bindtap='cancelsearch' class="activity_seabtn">取消</view>
-            <view class='activity_add' wx:if="{{addflag}}"><image bindtap='addhandle' src='{{addimg}}'></image></view>
+            <view class="action">
+              <button class="cu-btn bg-green shadow-blur round" size="mini">搜索</button>
+            </view>
         </view>
-      
     </view>
+
+
     <view class="container">
 
       <view class="word-list">
-        <block wx:for="{{allwords}}" >
+        <view class="indexItem" >A</view>
+        <block wx:for="{{allwordA}}" >
+          <view class="word-item">
+            <navigator url="/pages/WordDetails/WordDetails?"class="text">
+              {{item.word}}
+            </navigator>
+          <view class="arrow"/>
+          </view>
+        </block>
+        
+        <view class="indexItem" >B</view>
+        <block wx:for="{{allwordB}}" >
           <view class="word-item">
             <navigator url="/pages/study/study?"class="text">
               {{item.word}}
@@ -26,6 +36,18 @@
           <view class="arrow"/>
           </view>
         </block>
+
+        <view class="indexItem" >C</view>
+        <block wx:for="{{allwordC}}" >
+          <view class="word-item">
+            <navigator url="/pages/study/study?"class="text">
+              {{item.word}}
+            </navigator>
+          <view class="arrow"/>
+          </view>
+        </block>
+
+
       </view>
     </view>
 </view>
