@@ -48,9 +48,14 @@ button {
   margin-bottom: 20rpx;
   color: #ec008c;
 }
+ .picker{
+   display: flex;
+   padding-left: 20rpx;
+  
 
+ }
 .text2 {
-  font: "微软雅黑";
+  font-family: "黑体";
   font-size: 40rpx;
   margin: 0rpx 0rpx 20rpx 0rpx;
   text-align: left;

@@ -1,2 +1,5 @@
 <!--pages/Game/game.wxml-->
-<text>pages/Game/game.wxml</text>
+
+<view class="con">
+   <text class="text">敬请期待！</text>
+</view>

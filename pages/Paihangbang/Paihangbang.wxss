@@ -5,7 +5,7 @@ height: 3rem;
 line-height: 3rem;
 border-bottom: 1rpx solid #eee;
 position: relative;
-
+flex-direction: row;
 }
 
 .text{
@@ -14,7 +14,7 @@ font-size: 40rpx;
 
 }
 
-.arrow{
+/* .arrow{
 width: 15rpx;
 height: 15rpx;
 border-top: 2rpx solid #999;
@@ -24,7 +24,7 @@ right: 20rpx;
 transform: rotate(45deg);
 top: 50%;
 
-}
+} */
 
 
 .changePlan {
@@ -32,13 +32,89 @@ top: 50%;
   flex-direction: row;
   color:#ff9700;
   align-items: center;
-  margin-left: 40rpx;
+
     font-size: 40rpx;
   font-weight: 500;
   
 }
+.userindex{
 
-.userName{
-
-  margin-left: 20rpx;
+width: 15%;
+color: black;
+text-align:center;
 }
+
+.wordNum{
+  width:25%;
+  text-align:right;
+  margin-right: 20rpx;
+}
+.userName{
+ display: flex;
+ flex-direction: row;
+ width: 45%;
+  /* margin-left: 30rpx; */
+}
+
+ .class1{
+  
+width: 15%;
+
+ }
+ .class2{
+   margin-left: 20rpx;
+
+ }
+.person-item{
+
+
+}
+
+
+
+page{ 
+ display: flex; 
+ flex-direction: column; 
+ height: 100%; 
+} 
+
+.navbar{ 
+ flex: none; 
+ display: flex; 
+ background: #fff; 
+} 
+
+.navbar .item{ 
+ position: relative; 
+ flex: auto; 
+ text-align: center; 
+ line-height: 80rpx; 
+} 
+
+.navbar .item.active{ 
+
+ color: #FFCC00; 
+
+} 
+
+.navbar .item.active:after{ 
+
+ content: ""; 
+
+ display: block; 
+
+ position: absolute; 
+
+ bottom: 0; 
+
+ left: 0; 
+
+ right: 0; 
+
+ height: 4rpx; 
+
+ background: #FFCC00; 
+
+}
+
+

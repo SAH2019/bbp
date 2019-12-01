@@ -1,7 +1,5 @@
-
   <view class="container">
       <view class="title">{{book}}</view>
-      <view class="title">第{{}}天</view>
       <view class="word">{{word}}</view>
   </view>
   <view class="detailed">
